@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security House - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #e9ecef;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #6c757d;
+            font-size: 1.1em;
+        }
+        
+        .last-updated {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .last-updated strong {
+            color: #1976d2;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .section h3 {
+            color: #34495e;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #f39c12;
+        }
+        
+        .highlight-box h3 {
+            color: #d68910;
+            margin-top: 0;
+        }
+        
+        .contact-info {
+            background-color: #e8f5e8;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .contact-info h3 {
+            color: #27ae60;
+            margin-top: 0;
+        }
+        
+        .contact-info a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 2px solid #e9ecef;
+            margin-top: 40px;
+            color: #6c757d;
+        }
+        
+        .no-data-icon {
+            font-size: 3em;
+            color: #27ae60;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .security-badge {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin: 5px 5px 5px 0;
+        }
+        
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .language-switcher button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        
+        .language-switcher button:hover {
+            background-color: #2980b9;
+        }
+        
+        .language-switcher button.active {
+            background-color: #27ae60;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section h2 {
+                font-size: 1.3em;
+            }
+            
+            .language-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <button id="lang-zh" onclick="switchLanguage('zh')">中文</button>
+        <button id="lang-en" class="active" onclick="switchLanguage('en')">English</button>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 data-zh="🔒 安全屋" data-en="🔒 Security House">🔒 Security House</h1>
+            <p class="subtitle" data-zh="隐私政策" data-en="Privacy Policy">Privacy Policy</p>
+        </div>
+        
+        <div class="last-updated">
+            <strong data-zh="最后更新时间：" data-en="Last Updated: ">Last Updated: </strong>December 19, 2024
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="1. 信息收集与使用" data-en="1. Information Collection and Use">1. Information Collection and Use</h2>
+            <p data-zh="我们承诺不会收集、存储或传输您的任何个人信息或密码数据。" data-en="We promise not to collect, store, or transmit any of your personal information or password data.">We promise not to collect, store, or transmit any of your personal information or password data.</p>
+            <ul>
+                <li data-zh="本应用完全离线运行，无需网络连接" data-en="This application runs completely offline without requiring network connection">This application runs completely offline without requiring network connection</li>
+                <li data-zh="所有数据仅存储在您的设备本地" data-en="All data is stored only locally on your device">All data is stored only locally on your device</li>
+                <li data-zh="我们不会访问、收集或上传您的任何数据" data-en="We will not access, collect, or upload any of your data">We will not access, collect, or upload any of your data</li>
+                <li data-zh="应用不包含任何数据收集或分析功能" data-en="The application does not contain any data collection or analytics features">The application does not contain any data collection or analytics features</li>
+                <li data-zh="无用户注册、登录或账户系统" data-en="No user registration, login, or account system">No user registration, login, or account system</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <h3 data-zh="🛡️ 零数据收集承诺" data-en="🛡️ Zero Data Collection Commitment">🛡️ Zero Data Collection Commitment</h3>
+                <p data-zh="我们郑重承诺，本应用不会收集您的任何个人信息，包括但不限于：" data-en="We solemnly promise that this application will not collect any of your personal information, including but not limited to:">We solemnly promise that this application will not collect any of your personal information, including but not limited to:</p>
+                <ul>
+                    <li data-zh="个人身份信息" data-en="Personal identification information">Personal identification information</li>
+                    <li data-zh="密码和账号信息" data-en="Passwords and account information">Passwords and account information</li>
+                    <li data-zh="设备信息" data-en="Device information">Device information</li>
+                    <li data-zh="使用行为数据" data-en="Usage behavior data">Usage behavior data</li>
+                    <li data-zh="位置信息" data-en="Location information">Location information</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="2. 数据安全" data-en="2. Data Security">2. Data Security</h2>
+            <p data-zh="我们采用最高标准的安全措施保护您的数据：" data-en="We adopt the highest standard security measures to protect your data:">We adopt the highest standard security measures to protect your data:</p>
+            <ul>
+                <li><strong data-zh="本地数据加密存储" data-en="Local encrypted data storage">Local encrypted data storage</strong><span data-zh="：使用AES加密算法保护所有敏感数据" data-en=": Uses AES encryption algorithm to protect all sensitive data">: Uses AES encryption algorithm to protect all sensitive data</span></li>
+                <li><strong data-zh="PBKDF2密钥派生" data-en="PBKDF2 key derivation">PBKDF2 key derivation</strong><span data-zh="：使用PBKDF2算法从您的密码派生加密密钥" data-en=": Uses PBKDF2 algorithm to derive encryption keys from your password">: Uses PBKDF2 algorithm to derive encryption keys from your password</span></li>
+                <li><strong data-zh="随机盐值" data-en="Random salt">Random salt</strong><span data-zh="：每次加密都生成随机盐值，增强安全性" data-en=": Generates random salt for each encryption to enhance security">: Generates random salt for each encryption to enhance security</span></li>
+                <li><strong data-zh="无网络传输" data-en="No network transmission">No network transmission</strong><span data-zh="：确保数据不会泄露到任何外部服务器" data-en=": Ensures data will not leak to any external servers">: Ensures data will not leak to any external servers</span></li>
+                <li><strong data-zh="数据自动清除" data-en="Automatic data clearing">Automatic data clearing</strong><span data-zh="：应用卸载时数据自动清除" data-en=": Data is automatically cleared when the application is uninstalled">: Data is automatically cleared when the application is uninstalled</span></li>
+                <li><strong data-zh="建议定期备份" data-en="Regular backup recommended">Regular backup recommended</strong><span data-zh="：建议用户定期备份重要数据" data-en=": Users are advised to regularly backup important data">: Users are advised to regularly backup important data</span></li>
+            </ul>
+            
+            <div class="no-data-icon">🔐</div>
+            <p style="text-align: center; font-weight: bold; color: #27ae60;" data-zh="您的数据，您做主！所有数据完全由您控制。" data-en="Your data, your control! All data is completely under your control.">
+                Your data, your control! All data is completely under your control.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="3. 第三方服务" data-en="3. Third-Party Services">3. Third-Party Services</h2>
+            <p data-zh="本应用不集成任何第三方服务：" data-en="This application does not integrate any third-party services:">This application does not integrate any third-party services:</p>
+            <ul>
+                <li><span class="security-badge" data-zh="无广告服务" data-en="No Ad Services">No Ad Services</span></li>
+                <li><span class="security-badge" data-zh="无分析工具" data-en="No Analytics">No Analytics</span></li>
+                <li><span class="security-badge" data-zh="无云存储服务" data-en="No Cloud Storage">No Cloud Storage</span></li>
+                <li><span class="security-badge" data-zh="无社交登录功能" data-en="No Social Login">No Social Login</span></li>
+                <li><span class="security-badge" data-zh="无推送服务" data-en="No Push Services">No Push Services</span></li>
+                <li><span class="security-badge" data-zh="无崩溃报告" data-en="No Crash Reports">No Crash Reports</span></li>
+            </ul>
+            <p data-zh="我们确保您的数据不会与任何第三方共享或传输。" data-en="We ensure that your data will not be shared or transmitted to any third parties.">We ensure that your data will not be shared or transmitted to any third parties.</p>
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="4. 数据备份与恢复" data-en="4. Data Backup and Recovery">4. Data Backup and Recovery</h2>
+            <p data-zh="由于采用完全本地存储策略：" data-en="Due to the completely local storage strategy:">Due to the completely local storage strategy:</p>
+            <ul>
+                <li><strong data-zh="用户责任" data-en="User Responsibility">User Responsibility</strong><span data-zh="：用户需自行负责数据备份" data-en=": Users are responsible for their own data backup">: Users are responsible for their own data backup</span></li>
+                <li><strong data-zh="数据丢失风险" data-en="Data Loss Risk">Data Loss Risk</strong><span data-zh="：应用卸载将导致数据永久丢失" data-en=": Uninstalling the application will result in permanent data loss">: Uninstalling the application will result in permanent data loss</span></li>
+                <li><strong data-zh="备份建议" data-en="Backup Recommendation">Backup Recommendation</strong><span data-zh="：建议定期导出重要密码信息" data-en=": Regular export of important password information is recommended">: Regular export of important password information is recommended</span></li>
+                <li><strong data-zh="恢复限制" data-en="Recovery Limitations">Recovery Limitations</strong><span data-zh="：我们无法协助恢复丢失的数据" data-en=": We cannot assist in recovering lost data">: We cannot assist in recovering lost data</span></li>
+                <li><strong data-zh="设备故障" data-en="Device Failure">Device Failure</strong><span data-zh="：设备损坏或重置可能导致数据丢失" data-en=": Device damage or reset may result in data loss">: Device damage or reset may result in data loss</span></li>
+            </ul>
+            
+            <div class="highlight-box">
+                <h3 data-zh="⚠️ 重要提醒" data-en="⚠️ Important Notice">⚠️ Important Notice</h3>
+                <p data-zh="由于本应用采用完全本地存储策略，用户需自行承担数据丢失风险。建议定期备份重要密码信息，避免因设备故障、应用卸载等原因造成数据丢失。" data-en="Due to the completely local storage strategy of this application, users need to bear the risk of data loss themselves. It is recommended to regularly backup important password information to avoid data loss due to device failure, application uninstallation, etc.">Due to the completely local storage strategy of this application, users need to bear the risk of data loss themselves. It is recommended to regularly backup important password information to avoid data loss due to device failure, application uninstallation, etc.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="5. 权限使用说明" data-en="5. Permission Usage">5. Permission Usage</h2>
+            <p data-zh="本应用仅使用必要的系统权限：" data-en="This application only uses necessary system permissions:">This application only uses necessary system permissions:</p>
+            <ul>
+                <li><strong data-zh="存储权限" data-en="Storage Permission">Storage Permission</strong><span data-zh="：用于本地数据存储，不涉及网络传输" data-en=": Used for local data storage, no network transmission involved">: Used for local data storage, no network transmission involved</span></li>
+                <li><strong data-zh="无网络权限" data-en="No Network Permission">No Network Permission</strong><span data-zh="：确保数据不会上传到任何服务器" data-en=": Ensures data will not be uploaded to any servers">: Ensures data will not be uploaded to any servers</span></li>
+                <li><strong data-zh="无相机权限" data-en="No Camera Permission">No Camera Permission</strong><span data-zh="：不涉及拍照或扫描功能" data-en=": No photography or scanning features involved">: No photography or scanning features involved</span></li>
+                <li><strong data-zh="无位置权限" data-en="No Location Permission">No Location Permission</strong><span data-zh="：不收集位置信息" data-en=": No location information collection">: No location information collection</span></li>
+                <li><strong data-zh="无通讯录权限" data-en="No Contacts Permission">No Contacts Permission</strong><span data-zh="：不访问通讯录信息" data-en=": No access to contacts information">: No access to contacts information</span></li>
+                <li><strong data-zh="无麦克风权限" data-en="No Microphone Permission">No Microphone Permission</strong><span data-zh="：不涉及录音功能" data-en=": No recording features involved">: No recording features involved</span></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="6. 儿童隐私保护" data-en="6. Children's Privacy Protection">6. Children's Privacy Protection</h2>
+            <p data-zh="我们重视儿童隐私保护：" data-en="We value children's privacy protection:">We value children's privacy protection:</p>
+            <ul>
+                <li data-zh="本应用适合所有年龄段使用" data-en="This application is suitable for all age groups">This application is suitable for all age groups</li>
+                <li data-zh="不会收集儿童个人信息" data-en="No collection of children's personal information">No collection of children's personal information</li>
+                <li data-zh="建议家长监督儿童使用" data-en="Parents are advised to supervise children's usage">Parents are advised to supervise children's usage</li>
+                <li data-zh="如发现儿童使用，请及时指导" data-en="If children are found using it, please provide timely guidance">If children are found using it, please provide timely guidance</li>
+                <li data-zh="无任何可能对儿童造成伤害的功能" data-en="No features that may harm children">No features that may harm children</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="7. 隐私政策更新" data-en="7. Privacy Policy Updates">7. Privacy Policy Updates</h2>
+            <p data-zh="我们可能会更新本隐私政策：" data-en="We may update this privacy policy:">We may update this privacy policy:</p>
+            <ul>
+                <li data-zh="更新时会在应用内通知用户" data-en="Users will be notified within the application when updated">Users will be notified within the application when updated</li>
+                <li data-zh="重大变更会提前告知用户" data-en="Major changes will be announced to users in advance">Major changes will be announced to users in advance</li>
+                <li data-zh="继续使用即表示同意更新条款" data-en="Continued use indicates agreement to updated terms">Continued use indicates agreement to updated terms</li>
+                <li data-zh="如有疑问可联系开发者" data-en="Contact the developer if you have any questions">Contact the developer if you have any questions</li>
+                <li data-zh="更新历史会保留在应用内" data-en="Update history will be retained within the application">Update history will be retained within the application</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="8. 联系我们" data-en="8. Contact Us">8. Contact Us</h2>
+            <div class="contact-info">
+                <h3 data-zh="📧 联系方式" data-en="📧 Contact Information">📧 Contact Information</h3>
+                <p data-zh="如果您对本隐私政策有任何疑问：" data-en="If you have any questions about this privacy policy:">If you have any questions about this privacy policy:</p>
+                <ul>
+                    <li><strong data-zh="邮箱" data-en="Email">Email</strong><span data-zh="：" data-en=": ">: </span><a href="mailto:privacy@securityhouse.app">privacy@securityhouse.app</a></li>
+                    <li><strong data-zh="响应时间" data-en="Response Time">Response Time</strong><span data-zh="：我们会在24小时内回复" data-en=": We will reply within 24 hours">: We will reply within 24 hours</span></li>
+                    <li><strong data-zh="建议反馈" data-en="Feedback">Feedback</strong><span data-zh="：欢迎提出改进建议" data-en=": Welcome to provide improvement suggestions">: Welcome to provide improvement suggestions</span></li>
+                    <li><strong data-zh="技术支持" data-en="Technical Support">Technical Support</strong><span data-zh="：提供技术支持和问题解答" data-en=": Provide technical support and problem solving">: Provide technical support and problem solving</span></li>
+                </ul>
+                <p style="margin-top: 15px;"><strong data-zh="感谢您的信任与支持！" data-en="Thank you for your trust and support!">Thank you for your trust and support!</strong></p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 data-zh="9. 法律声明" data-en="9. Legal Notice">9. Legal Notice</h2>
+            <h3 data-zh="免责声明" data-en="Disclaimer">Disclaimer</h3>
+            <ul>
+                <li data-zh="本应用仅供个人使用，不承担任何商业责任" data-en="This application is for personal use only and bears no commercial responsibility">This application is for personal use only and bears no commercial responsibility</li>
+                <li data-zh="用户需自行承担数据丢失风险" data-en="Users need to bear the risk of data loss themselves">Users need to bear the risk of data loss themselves</li>
+                <li data-zh="我们不对因使用本应用造成的任何损失负责" data-en="We are not responsible for any losses caused by using this application">We are not responsible for any losses caused by using this application</li>
+                <li data-zh="建议用户定期备份重要数据" data-en="Users are advised to regularly backup important data">Users are advised to regularly backup important data</li>
+            </ul>
+            
+            <h3 data-zh="适用法律" data-en="Applicable Law">Applicable Law</h3>
+            <ul>
+                <li data-zh="本隐私政策受中华人民共和国法律管辖" data-en="This privacy policy is governed by the laws of the People's Republic of China">This privacy policy is governed by the laws of the People's Republic of China</li>
+                <li data-zh="如有争议，应通过友好协商解决" data-en="Any disputes should be resolved through friendly consultation">Any disputes should be resolved through friendly consultation</li>
+                <li data-zh="协商不成的，可向有管辖权的人民法院起诉" data-en="If consultation fails, litigation may be filed with the competent people's court">If consultation fails, litigation may be filed with the competent people's court</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p data-zh="© 2024 安全屋应用 | 保护您的隐私，守护您的数据" data-en="© 2024 Security House App | Protect Your Privacy, Guard Your Data">© 2024 Security House App | Protect Your Privacy, Guard Your Data</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                <span class="security-badge" data-zh="🔒 完全离线" data-en="🔒 Completely Offline">🔒 Completely Offline</span>
+                <span class="security-badge" data-zh="🛡️ 本地加密" data-en="🛡️ Local Encryption">🛡️ Local Encryption</span>
+                <span class="security-badge" data-zh="📱 隐私优先" data-en="📱 Privacy First">📱 Privacy First</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 检测浏览器语言并自动切换
+        function detectLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            // 默认使用英文，只有明确检测到中文时才使用中文
+            if (browserLang.startsWith('zh')) {
+                return 'zh';
+            } else {
+                return 'en'; // 默认英文
+            }
+        }
+
+        // 切换语言
+        function switchLanguage(lang) {
+            // 更新按钮状态
+            document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
+            document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+            
+            // 更新页面语言属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+            
+            // 更新所有带有data属性的元素
+            const elements = document.querySelectorAll('[data-zh][data-en]');
+            elements.forEach(element => {
+                element.textContent = element.getAttribute(`data-${lang}`);
+            });
+            
+            // 保存语言偏好
+            localStorage.setItem('preferred-language', lang);
+        }
+
+        // 页面加载时初始化语言
+        document.addEventListener('DOMContentLoaded', function() {
+            // 优先使用保存的语言偏好，否则使用默认英文
+            const savedLang = localStorage.getItem('preferred-language');
+            const lang = savedLang || 'en'; // 默认英文
+            switchLanguage(lang);
+        });
+
+        // 添加键盘快捷键支持
+        document.addEventListener('keydown', function(event) {
+            // Ctrl/Cmd + L 切换语言
+            if ((event.ctrlKey || event.metaKey) && event.key === 'l') {
+                event.preventDefault();
+                const currentLang = document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
+                const newLang = currentLang === 'zh' ? 'en' : 'zh';
+                switchLanguage(newLang);
+            }
+        });
+    </script>
+</body>
+</html>
